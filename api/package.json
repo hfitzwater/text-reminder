@@ -1,0 +1,53 @@
+{
+  "name": "text-reminder-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Backend component of Text Reminder",
+  "scripts": {
+    "develop": "strapi develop",
+    "debug": "node --inspect=127.0.0.1:9229 ./node_modules/strapi/bin/strapi.js develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.671.0",
+    "bull": "^3.13.0",
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.25.3",
+    "pg": "^8.2.1",
+    "sqlite3": "latest",
+    "strapi": "^3.1.5",
+    "strapi-admin": "3.1.5",
+    "strapi-connector-bookshelf": "3.1.5",
+    "strapi-connector-mongoose": "3.1.5",
+    "strapi-plugin-content-manager": "3.1.5",
+    "strapi-plugin-content-type-builder": "3.1.5",
+    "strapi-plugin-documentation": "^3.1.5",
+    "strapi-plugin-email": "3.1.5",
+    "strapi-plugin-graphql": "3.1.5",
+    "strapi-plugin-upload": "3.1.5",
+    "strapi-plugin-users-permissions": "3.1.5",
+    "strapi-utils": "3.1.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a9bf4107-f263-4c4c-bb05-46e48fd64dac"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "^15.0.0",
+    "juery": "^1.0.0",
+    "koa": "^2.12.0",
+    "popper.js": "^1.16.1"
+  }
+}

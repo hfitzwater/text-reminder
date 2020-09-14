@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/phone-number-confirmations",
+      "handler": "phone-number-confirmation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phone-number-confirmations/count",
+      "handler": "phone-number-confirmation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phone-number-confirmations/:id",
+      "handler": "phone-number-confirmation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/phone-number-confirmations",
+      "handler": "phone-number-confirmation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/phone-number-confirmations/confirm",
+      "handler": "phone-number-confirmation.confirm",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/phone-number-confirmations/:id",
+      "handler": "phone-number-confirmation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/phone-number-confirmations/:id",
+      "handler": "phone-number-confirmation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

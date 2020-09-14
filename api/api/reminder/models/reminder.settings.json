@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reminders",
+  "info": {
+    "name": "Reminder"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "message": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "reminders"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "repeat": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "default": "none"
+    },
+    "phone_number": {
+      "model": "phone-number"
+    }
+  }
+}

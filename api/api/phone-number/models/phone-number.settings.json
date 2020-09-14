@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phone_numbers",
+  "info": {
+    "name": "phoneNumber"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "number": {
+      "type": "biginteger"
+    },
+    "user": {
+      "via": "phoneNumber",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "private": false
+    }
+  }
+}

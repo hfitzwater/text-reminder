@@ -1,0 +1,27 @@
+FROM strapi/base
+
+WORKDIR /text-reminder-api
+
+ARG DATABASE_URI
+ENV DATABASE_URI=${DATABASE_URI}
+
+ARG REDIS_HOST
+ENV REDIS_HOST=${REDIS_HOST}
+
+ARG NODE_ENV
+ENV NODE_ENV=${NODE_ENV}
+
+ARG ADMIN_JWT_SECRET
+ENV ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET}
+
+COPY ./package*.json ./
+
+RUN npm ci
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 1337
+
+CMD ["npm", "run", "start"]
