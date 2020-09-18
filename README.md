@@ -8,14 +8,18 @@ Try it out: [textreminder.io](https://textreminder.io)
 
 > For demo purposes. Accounts and data may not persist
 
-# Front-end
+# Frontend
 
 A [vue](https://github.com/vuejs/vue) application
 
 See [readme](./client/README.md)
 
-# Back-end
+# Backend
 
 A [strapi](https://github.com/strapi/strapi) application
 
 See [readme](./api/README.md)
+
+# Compose Diagram
+
+![Diagram](img/text-reminder-diagram.png)
