@@ -20,7 +20,7 @@
     "moment": "^2.25.3",
     "pg": "^8.2.1",
     "sqlite3": "latest",
-    "strapi": "^3.1.5",
+    "strapi": "^3.6.8",
     "strapi-admin": "3.1.5",
     "strapi-connector-bookshelf": "3.1.5",
     "strapi-connector-mongoose": "3.1.5",
